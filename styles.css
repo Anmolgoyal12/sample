@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.zoomable {
+  cursor: zoom-in;
+}
+
+.floating-div {
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  width: 300px;
+  height: 300px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1000;
+  display: none;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#zoomedContent {
+  position: absolute;
+  transform: scale(3);
+  transform-origin: top left;
+}
